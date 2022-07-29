@@ -1,13 +1,14 @@
 import React from "react";
 import classNames from "classnames/bind";
 import DataTable from "react-data-table-component";
-import { columns } from "scene/Main/ui/types";
+import { columns, TableRowType } from "scene/Main/ui/types";
 import { isExist } from "src/utils/utils";
 import styles from "./AppUi.module.scss";
 
 const cnb = classNames.bind(styles);
 
 interface Props {
+  tableData: TableRowType[];
   className?: string;
   summary?: number;
   maxPriceName?: string;
@@ -15,14 +16,21 @@ interface Props {
   errorsName?: string[];
 }
 
-const AppUi: React.FC<Props> = ({ className, summary, minPriceName, maxPriceName, errorsName }) => {
+const AppUi: React.FC<Props> = ({
+  className,
+  summary,
+  minPriceName,
+  maxPriceName,
+  errorsName,
+  tableData
+}) => {
   const transformNames = (errors: string[]): string => {
     return errors.join(", ");
   };
   return (
     <div className={classNames(cnb("appUi"), className)}>
       <div className={cnb("dataTable")}>
-        <DataTable columns={columns} data={[]} />
+        <DataTable columns={columns} data={tableData} />
       </div>
       <div className={cnb("results")}>
         {isExist(summary) && (

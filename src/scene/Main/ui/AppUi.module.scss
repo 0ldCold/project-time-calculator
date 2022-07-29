@@ -1,6 +1,17 @@
 .appUi {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
   color: black;
+  .dataTable{
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
+  }
   .results {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -9,9 +20,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
       h3 {
+        font-weight: 700;
       }
-      h4 {
+      h5 {
       }
     }
   }

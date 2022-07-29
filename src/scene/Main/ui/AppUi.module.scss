@@ -1,19 +1,17 @@
 .appUi {
   color: black;
-  .results{
+  .results {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    .resultRow{
+    .resultRow {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      h3{
-
+      h3 {
       }
-      h4{
-
+      h4 {
       }
     }
   }

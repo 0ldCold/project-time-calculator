@@ -1,0 +1,20 @@
+.appUi {
+  color: black;
+  .results{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .resultRow{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3{
+
+      }
+      h4{
+
+      }
+    }
+  }
+}

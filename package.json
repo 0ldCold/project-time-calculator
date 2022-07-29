@@ -1,5 +1,5 @@
 {
-  "name": "Project",
+  "name": "project-time-calculator",
   "version": "1.0.0",
   "description": "Project react app",
   "scripts": {
@@ -12,12 +12,13 @@
     "prepare": "husky install",
     "prettier": "prettier --write ."
   },
-  "author": "Alekseev K.A.",
+  "author": "Susskiy I.I.",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.25.0",
     "classnames": "^2.3.1",
     "react": "^17.0.2",
+    "react-data-table-component": "^7.5.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.4",
     "react-redux": "^7.2.6",

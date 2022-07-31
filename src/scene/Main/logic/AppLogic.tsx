@@ -11,6 +11,7 @@ const AppLogic: React.FC = () => {
       amount: 0
     }
   ];
+  // test
   const summary = 0;
   const minPriceName = "-";
   const maxPriceName = "-";
